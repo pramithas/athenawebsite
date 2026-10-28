@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Athena Solutions</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Athena Solutions is a software studio in Nepal. We build mobile apps, web platforms and real-time systems that work on the networks people actually have.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Young+Serif&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 28 16 4l11 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><ellipse class="leaf" cx="16" cy="20" rx="6" ry="2.4" transform="rotate(-24 16 20)"/></svg>
+      <span>Athena<small>Solutions</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="mann.html">Mann</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="band">
+    <div class="wrap hero">
+      <div>
+        <p class="eyebrow">Software studio · Nepal</p>
+        <h1>Software that works on the networks people actually have.</h1>
+        <p class="lede measure">Athena Solutions designs and builds mobile apps, web platforms and real-time systems. We test on slow mobile data and shared phones, because that's where most of our users are.</p>
+        <div class="actions">
+          <a class="btn btn--solid" href="contact.html">Start a project</a>
+          <a class="btn btn--ghost" href="mann.html">See our app, Mann</a>
+        </div>
+      </div>
+      <aside class="report" aria-label="Example: how we test call quality">
+        <header><span>Call-quality study</span><span>Mann · v2</span></header>
+        <dl>
+          <dt>calls</dt><dd>300, between headless peers</dd>
+          <dt>network</dt><dd>loss, burst loss, delay and slow links, injected with tc netem</dd>
+          <dt>audio</dt><dd>Opus, with and without RED</dd>
+          <dt>scored by</dt><dd>PESQ-WB and ESTOI</dd>
+          <dt>finding</dt><dd>RED gave the most protection against random loss; links under ~50 kbps need 60 ms frames</dd>
+        </dl>
+        <footer>We measure before we ship. The results changed how Mann's calls are tuned.</footer>
+      </aside>
+    </div>
+  </section>
+
+  <section class="band band--surface">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">What we build</p>
+        <h2>From the first sketch to the app store, and after.</h2>
+      </div>
+      <div class="grid">
+        <article class="item">
+          <h3>Mobile apps</h3>
+          <p>Android and iOS from one codebase, with offline fallbacks and small downloads for budget phones.</p>
+          <p class="tags">React Native · Expo · push notifications</p>
+        </article>
+        <article class="item">
+          <h3>Web platforms and APIs</h3>
+          <p>Back ends that stay correct under load: bookings that never double-sell, payments that settle exactly once.</p>
+          <p class="tags">TypeScript · Node.js · MongoDB · Redis · Kafka</p>
+        </article>
+        <article class="item">
+          <h3>Real-time audio and video</h3>
+          <p>Calls tuned and measured for weak 3G and 4G links, self-hosted so you don't pay for media in dollars.</p>
+          <p class="tags">WebRTC · LiveKit · Opus</p>
+        </article>
+        <article class="item">
+          <h3>Local payments</h3>
+          <p>eSewa and Khalti integrations that verify every payment server-to-server before anything is confirmed.</p>
+          <p class="tags">eSewa ePay v2 · Khalti KPG-2</p>
+        </article>
+        <article class="item">
+          <h3>Privacy-sensitive systems</h3>
+          <p>Health and identity data encrypted at the field level, with access limited to the people who need it.</p>
+          <p class="tags">AES-256-GCM · signed documents · audit trails</p>
+        </article>
+        <article class="item">
+          <h3>Infrastructure</h3>
+          <p>Deployments that scale for a busy evening and run on hosting you control, in Nepal if you need it.</p>
+          <p class="tags">Docker · Kubernetes · monitoring</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Our work</p>
+        <h2>Mann, our tele-counselling app</h2>
+      </div>
+      <div class="feature">
+        <img src="img/mann-icon.png" alt="Mann app icon" width="96" height="96">
+        <div>
+          <h3>Mann <span class="ne" lang="ne">मन</span></h3>
+          <p>Mann connects people across Nepal with counsellors and psychiatrists over private audio calls. It books and takes payment with eSewa or Khalti, keeps calls clear on poor connections, and never records a session.</p>
+        </div>
+        <a class="btn btn--ghost" href="mann.html">About Mann</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--surface">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">How we work</p>
+        <h2>Small team, short loops, real devices.</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>Understand</h3><p>We meet the people who will use it and agree what success looks like before we write code.</p></li>
+        <li><h3>Build in slices</h3><p>You get something working every week or two, on your own phone, not a slide deck.</p></li>
+        <li><h3>Test on real networks</h3><p>We try every release on slow and lossy connections and on low-end Android phones.</p></li>
+        <li><h3>Launch and support</h3><p>We handle the store listings, privacy policy and monitoring, then keep improving it with you.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap cta">
+      <div>
+        <h2>Have something to build?</h2>
+        <p class="lede">Tell us what you're working on. A few lines is enough to start.</p>
+      </div>
+      <a class="btn btn--solid" href="contact.html">Get in touch</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 Athena Solutions. Made in Nepal.</p>
+    <nav aria-label="Footer">
+      <a href="mann.html">Mann</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Mann privacy policy</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
