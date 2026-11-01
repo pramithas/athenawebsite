@@ -11,7 +11,6 @@ Plain HTML and CSS: no build step, no JavaScript. Open `index.html` in a browser
 | `privacy.html` | Mann privacy policy. The Play Store and App Store require a public URL for it. |
 
 ## Before going live
-- [ ] Replace `hello@yourdomain.com` in `contact.html` and `privacy.html` with the real address.
 - [ ] `privacy.html`: fill in every highlighted item, get a legal review, then delete the "Draft for review" box.
 - [ ] Check the team bio in `about.html`, and add anyone else.
 - [ ] Recheck the crisis numbers (1166, 100, 102) against `mha-backend/src/modules/crisis/crisisResources.ts`.
